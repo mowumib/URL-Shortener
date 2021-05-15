@@ -9,7 +9,7 @@ const shortenUrl = (val)=>{
 
     fetch('https://api-ssl.bitly.com/v4/shorten',{
         method: "POST",
-        header:{
+        headers:{
             Authorization: `Bearer ${token}`, "Content-Type": "application/json"
         },
         body: JSON.stringify(dataObject),
