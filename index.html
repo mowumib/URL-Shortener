@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Url Shortener</title>
+
+    <script src="src/js/clipboard.js-master/dist/clipboard.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="url-container">
+            <div class="header">URL Shortener</div>
+            <div class="content input_value">
+                <input type="text" class="initial-url" id="initial-url" placeholder="Paste your link..." required>
+            </div>
+            <div class="content">
+                <p class="new-url" id="new-url"></p>
+                <button class="copy" id="copy" data-clipboard-action="copy" data-clipboard-target="#new-url"><img src="images/copy.svg" alt="copy"></button>
+            </div>
+            <button class="generate">Generate Link</button>
+        </div>
+    </div>
+    <footer>
+        <p>made by <a href="https://github.com/mowumib">Mowumi</a> ♡</p>
+    </footer>
+    
+    <script src="src/js/index.js"></script>
+</body>
+</html>
